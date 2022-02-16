@@ -12,16 +12,24 @@ CREATE TABLE ph (
 
 /*not consists in sensor db*/
 CREATE TABLE FishFeeder (
- value float NOT NULL
+ id int NOT NULL AUTO_INCREMENT,
+ value float NOT NULL,
+ time timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+ PRIMARY KEY (id)
 );
 
 CREATE TABLE Humidity (
- value float NOT NULL
+ id int NOT NULL AUTO_INCREMENT,
+ value float NOT NULL,
+ time timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+ PRIMARY KEY (id)
 );
 
-
 CREATE TABLE LightIntensity (
- value float NOT NULL
+ id int NOT NULL AUTO_INCREMENT,
+ value float NOT NULL,
+ time timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+ PRIMARY KEY (id)
 );
 
 CREATE TABLE temperature (
