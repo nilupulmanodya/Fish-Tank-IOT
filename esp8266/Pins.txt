@@ -1,0 +1,19 @@
+temp_inc = 5    D1
+temp_dec = 4    D2
+alg_cont = 2    D4
+ph_cont = 14    D5
+hum_inc = 12    D6
+hum_dec = 13    D7
+light_ins_dec = 16   D0
+light_ins_inc = 0   D3
+fish_feed_cont = 9  D8
+
+temp_inc = machine.Pin(5,machine.Pin.OUT)
+temp_dec = machine.Pin(4,machine.Pin.OUT)
+alg_cont = machine.Pin(2,machine.Pin.OUT)
+ph_cont = machine.Pin(14,machine.Pin.OUT)
+hum_inc = machine.Pin(12,machine.Pin.OUT)
+hum_dec = machine.Pin(13,machine.Pin.OUT)
+light_ins_dec = machine.Pin(16,machine.Pin.OUT)
+light_ins_inc = machine.Pin(0,machine.Pin.OUT)
+fish_feed_cont = machine.Pin(15,machine.Pin.OUT)
