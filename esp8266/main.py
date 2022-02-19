@@ -72,7 +72,7 @@ def connect_network():
     import network
     station = network.WLAN(network.STA_IF)
     station.active(True)
-    station.connect("PROLINK_H5004NK_82FA6","vg2297788")
+    station.connect("PROLINK_H5004NK_82FA6","pw")
     station.isconnected()
     station.ifconfig()
     #print("success")
@@ -123,7 +123,7 @@ async def main_controler(data):
 
 #start event loop and rune entry point coroutine
 
-async def main_prg(parsed,refresh_time=300):#refresh time secs 3600 per hour
+async def main_prg(parsed,refresh_time=120):#refresh time secs 3600 per hour
 
     while True:
         print("refreshing main:",time.localtime())

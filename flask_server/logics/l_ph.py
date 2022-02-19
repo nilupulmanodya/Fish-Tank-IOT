@@ -2,7 +2,7 @@ def l_ph(connection_pred_db,connection_sensor_db):
     #define defaul variables (given by the owner) ******* consider about min and max while editing
     ph_min=25
     ph_max=30
-    time_one_unit = 10/2.5  #10/2.5*60 To reduce the value by 2.5c, 10 minutes the relay switch should be on    
+    time_one_unit = 1  #10/2.5*60 To reduce the value by 2.5c, 10 minutes the relay switch should be on    
     
     #get last row value of table ph from predicted data db    
     cursor_pred_db = connection_pred_db.cursor()

@@ -2,7 +2,7 @@ def l_temp(connection_pred_db,connection_sensor_db):
     #define defaul variables (given by the owner) ******* consider about min and max while editing
     temp_min=25
     temp_max=30
-    time_one_unit = 10/2.5  #To reduce the value by 2.5c, 10 minutes the relay switch should be on    
+    time_one_unit = 1  #To reduce the value by 2.5c, 10 minutes the relay switch should be on    
     
     #get last row value of table temp from predicted data db    
     cursor_pred_db = connection_pred_db.cursor()

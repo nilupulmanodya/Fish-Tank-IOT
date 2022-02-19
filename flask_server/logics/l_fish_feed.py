@@ -1,6 +1,6 @@
 def l_fish_feed(connection_pred_db,connection_sensor_db):
     #define defaul variables (given by the owner) ******* consider about min and max while editing
-    time_one_unit = 10/2.5  #5/5*60 If the value given is 5, the relay switch should be activated for 5 minutes.
+    time_one_unit = 1  #5/5*60 If the value given is 5, the relay switch should be activated for 5 minutes.
 
     
     #get last row value of table FishFeeder from predicted data db    
